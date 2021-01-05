@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>FALCON_-_PUNCH_.ogg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,3 @@
+Harry Potter y la Piedra Filosofal|Rowling, J. K.|Salamandra|1997|Narrativa
+Harry Potter y Cámara Secreta|Rowling, J. K.|Salamandra|1998|Narrativa
+Harry Potter y el Prisionero de Azkaban|Rowling, J. K.|Salamandra|1999|Narrativa

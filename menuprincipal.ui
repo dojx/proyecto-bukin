@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menuPrincipal</class>
+ <widget class="QMainWindow" name="menuPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>933</width>
+    <height>709</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu Principal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 255);</string>
+  </property>
+  <widget class="QWidget" name="menuPrincipal_2">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="menutabs">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="perfiltab">
+       <attribute name="title">
+        <string>Perfil</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QListWidget" name="listWidgetPerfil"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QTreeWidget" name="recomendadostreeWidget">
+          <column>
+           <property name="text">
+            <string>Recomendaciones</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Mis Libros</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Favoritos</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="editarperfilPB">
+          <property name="text">
+           <string>Editar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="recomendarRPB">
+          <property name="text">
+           <string>Recomendar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QPushButton" name="guardarRPB">
+          <property name="text">
+           <string>Guardar Cambios</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="busquedatab">
+       <attribute name="title">
+        <string>Buscar</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="2" column="0">
+         <widget class="QLabel" name="Label">
+          <property name="text">
+           <string>Año:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="categoriaLE"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="libroLabel">
+          <property name="text">
+           <string>Titulo:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="autorLE"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="categoriaLabel">
+          <property name="text">
+           <string>Categoria:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="editorialLabel">
+          <property name="text">
+           <string>Editorial:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="editorialLE"/>
+        </item>
+        <item row="7" column="2">
+         <widget class="QTreeWidget" name="librostreeWidget">
+          <property name="indentation">
+           <number>20</number>
+          </property>
+          <property name="allColumnsShowFocus">
+           <bool>true</bool>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+          <property name="columnCount">
+           <number>3</number>
+          </property>
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="headerCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="headerStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Libros</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Mis Libros</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Favoritos</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="libroLE"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="autorLabel">
+          <property name="text">
+           <string>Autor:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="anioLE"/>
+        </item>
+        <item row="9" column="2">
+         <widget class="QPushButton" name="buscarPB">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Buscar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="2">
+         <widget class="QPushButton" name="guardarbPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Guardar Cambios</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="ordenarlibroBPB">
+          <property name="text">
+           <string>Ordenar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="ordenarautorBPB">
+          <property name="text">
+           <string>Ordenar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="ordenaranioBPB">
+          <property name="text">
+           <string>Ordenar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="ordenarpublishBPB">
+          <property name="text">
+           <string>Ordenar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="ordenartipoBPB">
+          <property name="text">
+           <string>Ordenar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="librostab">
+       <attribute name="title">
+        <string>Mis Libros</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="3" column="0">
+         <widget class="QPushButton" name="ordenaranioMPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Año</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTreeWidget" name="mislibrostreeWidget">
+          <property name="columnCount">
+           <number>3</number>
+          </property>
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string notr="true">Libros</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Mis Libros</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Favoritos</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="guardarmlPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Guardar Cambios</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="ordenarpublishMPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Editorial</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="ordenarautorMPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Autor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="ordenartipoMPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Genero</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="ordenartituloMPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Titulo</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="favoritostab">
+       <attribute name="title">
+        <string>Favoritos</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="1" column="1">
+         <widget class="QTreeWidget" name="favoritostreeWidget">
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Libros</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Favoritos</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QPushButton" name="guardarfPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Guardar Cambios</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="ordenarpublishFPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Editorial</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="ordenaranioFPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Año</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QPushButton" name="ordenartipoFPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Genero</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="ordenarautorFPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Autor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="ordenarlibroFPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Ordenar por Titulo</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="categoriastab">
+       <attribute name="title">
+        <string>Categorias</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="11" column="0">
+         <widget class="QPushButton" name="ordenarlibroCPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Titulo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QPushButton" name="poesiaPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Poesía</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="narrativaPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Narrativa</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="epistolarPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Epistolar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QPushButton" name="ordenarautorCPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Autor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QPushButton" name="ordenarpublishCPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Editorial</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="biografiaPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Biografía</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="antologiaPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Antología</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="clasicoPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Clásico</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QPushButton" name="referenciaPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Referencia</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="expositivoPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Expositivo</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="15">
+         <widget class="QTreeWidget" name="categoriastreeWidget">
+          <column>
+           <property name="text">
+            <string notr="true">Libro</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Mis Libros</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Favoritos</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="QPushButton" name="categoriasguardarPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Guardar Cambios</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QPushButton" name="ordenaranioCPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Año</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="dramaPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Drama</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QPushButton" name="obragraficaPB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Obra Gráfica</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>933</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
