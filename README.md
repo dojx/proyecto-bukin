@@ -13,5 +13,5 @@ El sistema puede recomendar libros utilizando un grafo que representa las conexi
 ### Menu Principal
 ![alt text](https://github.com/dojx/proyecto-bukin/blob/main/menuprincipal.png)
 
-### Edicion
+### Editar datos
 ![alt text](https://github.com/dojx/proyecto-bukin/blob/main/editar.png)
