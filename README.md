@@ -1,4 +1,4 @@
-# Proyecto Bukin
+# Proyecto Bookin
 Biblioteca virtual en donde el usuario puede buscar libros y guardarlos en una base de datos. El sistema puede recomendar libros utilizando un grafo que representa las conexiones entre ellos. 
 
 Programado en C++ utilizando Qt Creator.
